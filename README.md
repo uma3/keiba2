@@ -1,2 +1,5 @@
 # keiba2
-Yahoo!競馬の予想でどれくらい稼げるかの分析　https://keiba.yahoo.co.jp/race/predict/1309040711/
+Yahoo!競馬の予想でどれくらい稼げるかの分析　例ページ：　https://keiba.yahoo.co.jp/race/predict/1309040711/
+
+2004年から2014年の11年分。
+上記例ページ右側の「買い目」に載っているものを全通り100円or1000円買い続けたら回収率はどうなるか計算。
