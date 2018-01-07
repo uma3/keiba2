@@ -37,52 +37,52 @@ def main():
             #競馬場ごとに分ける
             if keibajou == ['01']:
                 sapporo = race.search(url)
-                f = open(r"G:\comike\c88\data\sapporo\sapporo_"+sapporo.group()+".txt","a")
+                f = open(r"[directory_path]\sapporo_"+sapporo.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['02']:
                 hakodate = race.search(url)
-                f = open(r"G:\comike\c88\data\hakodate\hakodate_"+hakodate.group()+".txt","a")
+                f = open(r"[directory_path]\hakodate_"+hakodate.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['03']:
                 fukushima = race.search(url)
-                f = open(r"G:\comike\c88\data\fukushima\fukushima_"+fukushima.group()+".txt","a")
+                f = open(r"[directory_path]\fukushima_"+fukushima.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['04']:
                 niigata = race.search(url)
-                f = open(r"G:\comike\c88\data\niigata\niigata_"+niigata.group()+".txt","a")
+                f = open(r"[directory_path]\niigata_"+niigata.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['05']:
                 tokyo = race.search(url)
-                f = open(r"G:\comike\c88\data\tokyo\tokyo_"+tokyo.group()+".txt","a")
+                f = open(r"[directory_path]\tokyo_"+tokyo.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['06']:
                 nakayama = race.search(url)
-                f = open(r"G:\comike\c88\data\nakayama\nakayama_"+nakayama.group()+".txt","a")
+                f = open(r"[directory_path]\nakayama_"+nakayama.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['07']:
                 chukyo = race.search(url)
-                f = open(r"G:\comike\c88\data\chukyo\chukyo_"+chukyo.group()+".txt","a")
+                f = open(r"[directory_path]\chukyo_"+chukyo.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['08']:
                 kyoto = race.search(url)
-                f = open(r"G:\comike\c88\data\kyoto\kyoto_"+kyoto.group()+".txt","a")
+                f = open(r"[directory_path]\kyoto_"+kyoto.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['09']:
                 hanshin = race.search(url)
-                f = open(r"G:\comike\c88\data\hanshin\hanshin_"+hanshin.group()+".txt","a")
+                f = open(r"[directory_path]\hanshin_"+hanshin.group()+".txt","a")
                 f.write(html)
                 f.close()
             if keibajou == ['10']:
                 kokura = race.search(url)
-                f = open(r"G:\comike\c88\data\kokura\kokura_"+kokura.group()+".txt","a")
+                f = open(r"[directory_path]\kokura_"+kokura.group()+".txt","a")
                 f.write(html)
                 f.close()
         except:
