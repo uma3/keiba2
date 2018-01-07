@@ -44,9 +44,6 @@ def replace():
     pickle.dump(arr_c, f1)
     f1.close()
 
-#replace()
-
-
 
 def comp():
     fc = glob.glob(r'[directory_path]\chukyo\*.txt')
@@ -125,7 +122,6 @@ def comp():
                 shutil.copy(fnik1, r'[directory_path]\niigata_kekka')
                 break
 
-#comp()
 
 #予想配列中の要素を分割
 def bunkatsu():
@@ -186,8 +182,6 @@ def bunkatsu():
     f = open(r"[directory_path]\yosou_tama.txt","w")
     pickle.dump(tama_final, f)
     f.close()
-
-#bunkatsu()
 
 
 """
@@ -660,6 +654,10 @@ def culc():
 
 #中京：656，福島：631，函館：456，阪神：1236，小倉：723，京都：1381，中山：1280，新潟：789，札幌：445，東京：1339
 
+
+#replace()
+#comp()
+#bunkatsu()
 #特徴抽出
 #main()
 #特徴ベクトル作成
