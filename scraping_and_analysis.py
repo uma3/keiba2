@@ -14,7 +14,7 @@ def replace():
     #競馬場ごとに分けるための配列
     arr_c = []
 
-    f = glob.glob(r"G:\comike\c88\data\*_kekka.txt")
+    f = glob.glob(r"[directory_path]\*_kekka.txt")
 
     for fi in f:
         #レースごとに分けるための配列
@@ -40,7 +40,7 @@ def replace():
 
         arr_c.append(arr_r)
 
-    f1 = open(r"G:\comike\c88\data\kekka_final.txt","w")
+    f1 = open(r"[directory_path]\kekka_final.txt","w")
     pickle.dump(arr_c, f1)
     f1.close()
 
@@ -49,80 +49,80 @@ def replace():
 
 
 def comp():
-    fc = glob.glob(r'G:\comike\c88\data\chukyo\*.txt')
+    fc = glob.glob(r'[directory_path]\chukyo\*.txt')
 
-    fh = glob.glob(r'G:\comike\c88\data\hakodate\*.txt')
-    fs = glob.glob(r'G:\comike\c88\data\sapporo\*.txt')
-    ft = glob.glob(r'G:\comike\c88\data\tokyo\*.txt')
-    fk = glob.glob(r'G:\comike\c88\data\kyoto\*.txt')
-    fn = glob.glob(r'G:\comike\c88\data\nakayama\*.txt')
-    ff = glob.glob(r'G:\comike\c88\data\fukushima\*.txt')
-    fhan = glob.glob(r'G:\comike\c88\data\hanshin\*.txt')
-    fko = glob.glob(r'G:\comike\c88\data\kokura\*.txt')
-    fni = glob.glob(r'G:\comike\c88\data\niigata\*.txt')
+    fh = glob.glob(r'[directory_path]\hakodate\*.txt')
+    fs = glob.glob(r'[directory_path]\sapporo\*.txt')
+    ft = glob.glob(r'[directory_path]\tokyo\*.txt')
+    fk = glob.glob(r'[directory_path]\kyoto\*.txt')
+    fn = glob.glob(r'[directory_path]\nakayama\*.txt')
+    ff = glob.glob(r'[directory_path]\fukushima\*.txt')
+    fhan = glob.glob(r'[directory_path]\hanshin\*.txt')
+    fko = glob.glob(r'[directory_path]\kokura\*.txt')
+    fni = glob.glob(r'[directory_path]\niigata\*.txt')
 
-    fck = glob.glob(r'G:\comike\comike_python\chukyo\*.txt')
+    fck = glob.glob(r'[directory_path]\chukyo\*.txt')
 
-    fhk = glob.glob(r'G:\comike\comike_python\hakodate\*.txt')
-    fsk = glob.glob(r'G:\comike\comike_python\sapporo\*.txt')
-    ftk = glob.glob(r'G:\comike\comike_python\tokyo\*.txt')
-    fkk = glob.glob(r'G:\comike\comike_python\kyoto\*.txt')
-    fnk = glob.glob(r'G:\comike\comike_python\nakayama\*.txt')
-    ffk = glob.glob(r'G:\comike\comike_python\fukushima\*.txt')
-    fhank = glob.glob(r'G:\comike\comike_python\hanshin\*.txt')
-    fkok = glob.glob(r'G:\comike\comike_python\kokura\*.txt')
-    fnik = glob.glob(r'G:\comike\comike_python\niigata\*.txt')
+    fhk = glob.glob(r'[directory_path]\hakodate\*.txt')
+    fsk = glob.glob(r'[directory_path]\sapporo\*.txt')
+    ftk = glob.glob(r'[directory_path]\tokyo\*.txt')
+    fkk = glob.glob(r'[directory_path]\kyoto\*.txt')
+    fnk = glob.glob(r'[directory_path]\nakayama\*.txt')
+    ffk = glob.glob(r'[directory_path]\fukushima\*.txt')
+    fhank = glob.glob(r'[directory_path]\hanshin\*.txt')
+    fkok = glob.glob(r'[directory_path]\kokura\*.txt')
+    fnik = glob.glob(r'[directory_path]\niigata\*.txt')
 
     for f in fc:
         for fck1 in fck:
             if os.path.basename(f) == os.path.basename(fck1):
-                shutil.copy(fck1, r'G:\comike\c88\data\chukyo_kekka')
+                shutil.copy(fck1, r'[directory_path]\chukyo_kekka')
                 break
 
     for f in fh:
         for fhk1 in fhk:
             if os.path.basename(f) == os.path.basename(fhk1):
-                shutil.copy(fhk1, r'G:\comike\c88\data\hakodate_kekka')
+                shutil.copy(fhk1, r'[directory_path]\hakodate_kekka')
                 break
     for f in fs:
         for fsk1 in fsk:
             if os.path.basename(f) == os.path.basename(fsk1):
-                shutil.copy(fsk1, r'G:\comike\c88\data\sapporo_kekka')
+                shutil.copy(fsk1, r'[directory_path]\sapporo_kekka')
                 break
     for f in ft:
         for ftk1 in ftk:
             if os.path.basename(f) == os.path.basename(ftk1):
-                shutil.copy(ftk1, r'G:\comike\c88\data\tokyo_kekka')
+                shutil.copy(ftk1, r'[directory_path]\tokyo_kekka')
                 break
     for f in fk:
         for fkk1 in fkk:
             if os.path.basename(f) == os.path.basename(fkk1):
-                shutil.copy(fkk1, r'G:\comike\c88\data\kyoto_kekka')
+                shutil.copy(fkk1, r'[directory_path]\kyoto_kekka')
                 break
     for f in fn:
         for fnk1 in fnk:
             if os.path.basename(f) == os.path.basename(fnk1):
-                shutil.copy(fnk1, r'G:\comike\c88\data\nakayama_kekka')
+                shutil.copy(fnk1, r'[directory_path]\nakayama_kekka')
                 break
     for f in ff:
         for ffk1 in ffk:
             if os.path.basename(f) == os.path.basename(ffk1):
-                shutil.copy(ffk1, r'G:\comike\c88\data\fukushima_kekka')
+                shutil.copy(ffk1, r'[directory_path]\fukushima_kekka')
                 break
     for f in fhan:
         for fhank1 in fhank:
             if os.path.basename(f) == os.path.basename(fhank1):
-                shutil.copy(fhank1, r'G:\comike\c88\data\hanshin_kekka')
+                shutil.copy(fhank1, r'[directory_path]\hanshin_kekka')
                 break
     for f in fko:
         for fkok1 in fkok:
             if os.path.basename(f) == os.path.basename(fkok1):
-                shutil.copy(fkok1, r'G:\comike\c88\data\kokura_kekka')
+                shutil.copy(fkok1, r'[directory_path]\kokura_kekka')
                 break
     for f in fni:
         for fnik1 in fnik:
             if os.path.basename(f) == os.path.basename(fnik1):
-                shutil.copy(fnik1, r'G:\comike\c88\data\niigata_kekka')
+                shutil.copy(fnik1, r'[directory_path]\niigata_kekka')
                 break
 
 #comp()
@@ -130,7 +130,7 @@ def comp():
 #予想配列中の要素を分割
 def bunkatsu():
     #分割前のtxtファイル読み込み
-    f = glob.glob(r'G:\comike\c88\data\*_yosou.txt')
+    f = glob.glob(r'[directory_path]\*_yosou.txt')
 
     #予想者ごとの予想を入れる配列
     #[[中京],[福島],...]となる配列
@@ -174,16 +174,16 @@ def bunkatsu():
         tama_final.append(tama)
 
     #予想者ごとに保存
-    f = open(r"G:\comike\c88\data\yosou_ota.txt","w")
+    f = open(r"[directory_path]\yosou_ota.txt","w")
     pickle.dump(ota_final, f)
     f.close()
-    f = open(r"G:\comike\c88\data\yosou_ayae.txt","w")
+    f = open(r"[directory_path]\yosou_ayae.txt","w")
     pickle.dump(ayae_final, f)
     f.close()
-    f = open(r"G:\comike\c88\data\yosou_yamada.txt","w")
+    f = open(r"[directory_path]\yosou_yamada.txt","w")
     pickle.dump(yamada_final, f)
     f.close()
-    f = open(r"G:\comike\c88\data\yosou_tama.txt","w")
+    f = open(r"[directory_path]\yosou_tama.txt","w")
     pickle.dump(tama_final, f)
     f.close()
 
@@ -371,12 +371,12 @@ def ext(keibajou, soup, htmltxt):
 def main():
     #ファイル名抽出
     #予想ファイル
-    fileglob = glob.glob(r"G:\comike\c88\data\*_yosou\*.txt")
+    fileglob = glob.glob(r"[directory_path]\*_yosou\*.txt")
     #結果ファイル
-    #fileglob = glob.glob(r"G:\comike\c88\data\*_kekka\*.txt")
+    #fileglob = glob.glob(r"[directory_path]\*_kekka\*.txt")
 
     #ファイル命名用（競馬場名）
-    file_re = re.compile("data\\\\.+\\\\(.+)_")
+    file_re = re.compile("[directory_path]\\\\.+\\\\(.+)_")
 
     #特徴を入れるリスト
     sapporoar = []
@@ -429,43 +429,43 @@ def main():
     #保存
     #ファイル名を競馬場名_kekka.txtとして保存(予想の時は_yosouにする)
     #札幌
-    f = open(r"G:\comike\c88\data\sapporo_yosou.txt","w")
+    f = open(r"[directory_path]\sapporo_yosou.txt","w")
     pickle.dump(sapporoar, f)
     f.close()
     #函館
-    f = open(r"G:\comike\c88\data\hakodate_yosou.txt","w")
+    f = open(r"[directory_path]\hakodate_yosou.txt","w")
     pickle.dump(hakodatear, f)
     f.close()
     #福島
-    f = open(r"G:\comike\c88\data\fukushima_yosou.txt","w")
+    f = open(r"[directory_path]\fukushima_yosou.txt","w")
     pickle.dump(fukushimaar, f)
     f.close()
     #新潟
-    f = open(r"G:\comike\c88\data\niigata_yosou.txt","w")
+    f = open(r"[directory_path]\niigata_yosou.txt","w")
     pickle.dump(niigataar, f)
     f.close()
     #東京
-    f = open(r"G:\comike\c88\data\tokyo_yosou.txt","w")
+    f = open(r"[directory_path]\tokyo_yosou.txt","w")
     pickle.dump(tokyoar, f)
     f.close()
     #中山
-    f = open(r"G:\comike\c88\data\nakayama_yosou.txt","w")
+    f = open(r"[directory_path]\nakayama_yosou.txt","w")
     pickle.dump(nakayamaar, f)
     f.close()
     #中京
-    f = open(r"G:\comike\c88\data\chukyo_yosou.txt","w")
+    f = open(r"[directory_path]\chukyo_yosou.txt","w")
     pickle.dump(chukyoar, f)
     f.close()
     #京都
-    f = open(r"G:\comike\c88\data\kyoto_yosou.txt","w")
+    f = open(r"[directory_path]\kyoto_yosou.txt","w")
     pickle.dump(kyotoar, f)
     f.close()
     #阪神
-    f = open(r"G:\comike\c88\data\hanshin_yosou.txt","w")
+    f = open(r"[directory_path]\hanshin_yosou.txt","w")
     pickle.dump(hanshinar, f)
     f.close()
     #小倉
-    f = open(r"G:\comike\c88\data\kokura_yosou.txt","w")
+    f = open(r"[directory_path]\kokura_yosou.txt","w")
     pickle.dump(kokuraar, f)
     f.close()
 
@@ -474,7 +474,7 @@ def main():
 
 def analysis():
     #すべての予想のファイル名抽出
-    f = glob.glob(r"G:\comike\c88\data\yosou_*.txt")
+    f = glob.glob(r"[directory_path]\yosou_*.txt")
 
     """
     #予想者全員分の結果を入れる配列
@@ -498,7 +498,7 @@ def analysis():
         f0.close()
 
         #結果ファイル読み込み
-        fk = open(r"G:\comike\c88\data\kekka_final.txt")
+        fk = open(r"[directory_path]\kekka_final.txt")
         fkekka = pickle.load(fk)
         fk.close()
 
@@ -606,25 +606,25 @@ def analysis():
     print syou
 
 
-    fwrite = open("G:\\comike\\c88\\data\\kaisyuu1000.txt", "w")
+    fwrite = open("[directory_path]\\kaisyuu1000.txt", "w")
     pickle.dump(kaisyuu_yosousya, fwrite)
     fwrite.close()
-    #fwrite1 = open("G:\\comike\\c88\\data\\tekicyuu.txt", "w")
+    #fwrite1 = open("[directory_path]\\tekicyuu.txt", "w")
     #pickle.dump(tekicyuu_yosousya, fwrite1)
     #fwrite1.close()
-    fwrite2 = open("G:\\comike\\c88\\data\\kounyuu1000.txt", "w")
+    fwrite2 = open("[directory_path]\\kounyuu1000.txt", "w")
     pickle.dump(kounyuu_yosousya, fwrite2)
     fwrite2.close()
 
 
 def culc():
-    f1 = open(r"G:\comike\c88\data\kaisyuu1000.txt")
+    f1 = open(r"[directory_path]\kaisyuu1000.txt")
     kaisyuu = pickle.load(f1)
     f1.close()
-    f2 = open(r"G:\comike\c88\data\tekicyuu.txt")
+    f2 = open(r"[directory_path]\tekicyuu.txt")
     tekicyuu = pickle.load(f2)
     f2.close()
-    f3 = open(r"G:\comike\c88\data\kounyuu1000.txt")
+    f3 = open(r"[directory_path]\kounyuu1000.txt")
     kounyuu = pickle.load(f3)
     f3.close()
 
